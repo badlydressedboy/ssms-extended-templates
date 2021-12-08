@@ -1,0 +1,7 @@
+<ClearCache xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <Object>
+    <DatabaseID>RePro_Local</DatabaseID>
+    <CubeID>RePro</CubeID>
+    <MeasureGroupID>F V Credit Default Risk</MeasureGroupID>
+  </Object>
+</ClearCache>

@@ -1,0 +1,1 @@
+exec sp_MSforeachtable "DROP TABLE ? PRINT '? to be dropped' "

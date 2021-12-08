@@ -1,0 +1,7 @@
+WAITFOR DELAY '000:00:20' --20 secs
+
+WAITFOR TIME '7:00:00'
+
+
+EXEC xp_msver
+SELECT @@VERSION

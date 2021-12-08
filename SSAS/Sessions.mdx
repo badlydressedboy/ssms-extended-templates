@@ -1,0 +1,13 @@
+select session_last_command_start_time, 
+session_user_name, 
+session_spid, 
+session_current_database,  
+session_used_memory,
+session_cpu_time_ms,
+session_last_command,
+session_command_count,
+session_start_time,
+session_elapsed_time_ms, *
+from $system.discover_sessions 
+WHERE session_status = 0
+order by session_last_command_start_time desc

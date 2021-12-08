@@ -1,0 +1,6 @@
+BEGIN TRY
+	EXEC (@command);	
+END TRY
+BEGIN CATCH
+	PRINT 'Error: ' + ERROR_MESSAGE()
+END CATCH

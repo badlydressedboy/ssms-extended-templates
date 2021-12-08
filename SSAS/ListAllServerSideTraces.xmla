@@ -1,0 +1,14 @@
+<!--This script will give you a list off all running traces--> 
+<Discover xmlns="urn:schemas-microsoft-com:xml-analysis">
+  <RequestType>DISCOVER_TRACES</RequestType>
+  <Restrictions>
+    <RestrictionList>
+    </RestrictionList>
+  </Restrictions>
+  <Properties>
+    <PropertyList>
+    </PropertyList>
+  </Properties>
+</Discover>
+
+

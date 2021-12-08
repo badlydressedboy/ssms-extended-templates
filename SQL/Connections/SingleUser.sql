@@ -1,0 +1,5 @@
+ALTER DATABASE [repro_0_8_dev] SET SINGLE_USER WITH ROLLBACK IMMEDIATE 
+
+--do you stuff here 
+
+ALTER DATABASE [repro_0_8_dev] SET MULTI_USER

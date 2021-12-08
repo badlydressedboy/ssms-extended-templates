@@ -1,0 +1,39 @@
+--use the following to discover ALL schema rowsets available:
+select * from $SYSTEM.discover_schema_rowsets
+
+
+--DBSCEMA
+select * from $SYSTEM.DBSCHEMA_CATALOGS
+select * from $SYSTEM.DBSCHEMA_COLUMNS
+select * from $SYSTEM.DBSCHEMA_PROVIDER_TYPES
+select * from $SYSTEM.DBSCHEMA_TABLES
+
+ 
+--MDSCHEMA
+select * from $SYSTEM.MDSCHEMA_CUBES
+select * from $SYSTEM.MDSCHEMA_FUNCTIONS
+select * from $SYSTEM.MDSCHEMA_HIERARCHIES
+select * from $SYSTEM.MDSCHEMA_INPUT_DATASOURCES
+select * from $SYSTEM.MDSCHEMA_KPIS
+select * from $SYSTEM.MDSCHEMA_LEVELS
+select * from $SYSTEM.MDSCHEMA_MEASUREGROUP_DIMENSIONS
+select * from $SYSTEM.MDSCHEMA_MEASUREGROUPS
+select * from $SYSTEM.MDSCHEMA_MEASURES
+select * from $SYSTEM.MDSCHEMA_MEMBERS
+select * from $SYSTEM.MDSCHEMA_PROPERTIES
+select * from $SYSTEM.MDSCHEMA_SETS
+
+
+--SYSTEMRESTRICTSCHEMA must sometimes be used to specify restrictions for other schema rowsets
+SELECT * FROM SYSTEMRESTRICTSCHEMA(
+ $SYSTEM.DISCOVER_PARTITION_DIMENSION_STAT
+,DATABASE_NAME = 'RePro_0_8_1_Dev'
+,CUBE_NAME = 'repro'
+,MEASURE_GROUP_NAME = 'Ir Source Delta'
+,PARTITION_NAME = 'Ir Source Delta')
+
+select * from $SYSTEM.DISCOVER_OBJECT_MEMORY_USAGE
+ORDER BY OBJECT_MEMORY_NONSHRINKABLE DESC
+
+
+SELECT * FROM $SYSTEM.DISCOVER_LOCKS

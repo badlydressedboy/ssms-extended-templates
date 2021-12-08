@@ -1,0 +1,2 @@
+CREATE ROLE [role_ReProUser]		AUTHORIZATION [dbo];
+GO

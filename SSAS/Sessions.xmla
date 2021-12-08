@@ -1,0 +1,9 @@
+<Discover xmlns="urn:schemas-microsoft-com:xml-analysis">
+  <RequestType>DISCOVER_SESSIONS</RequestType>
+  <Restrictions>
+    <RestrictionList />
+  </Restrictions>
+  <Properties>
+    <PropertyList />
+  </Properties>
+  </Discover>

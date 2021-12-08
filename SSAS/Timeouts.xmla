@@ -1,0 +1,5 @@
+
+
+commit timeout:			900000 = 900 seconds = 15 mins
+force commit timeout:	600000 = 600 seconds = 10 mins
+server timeout:			3600 seconds = 60 mins

@@ -1,0 +1,9 @@
+SELECT 
+  session_spid
+, command_start_time
+, command_end_time
+, command_text
+, * 
+FROM $system.DISCOVER_Commands
+order by command_end_time desc
+
