@@ -1,0 +1,12 @@
+CREATE USER [SQL_Global_Admin_Read] FROM EXTERNAL PROVIDER;
+ALTER ROLE db_datareader ADD MEMBER [SQL_Global_Admin_Read];
+GRANT VIEW DEFINITION TO [SQL_Global_Admin_Read];
+GRANT VIEW DATABASE STATE TO [SQL_Global_Admin_Read];
+GRANT ALTER ANY DATABASE EVENT SESSION TO [SQL_Global_Admin_Read];
+
+
+--SYNAPSE VERSION
+CREATE USER [SQL_Global_Admin_Read] FROM EXTERNAL PROVIDER;
+EXEC sp_addrolemember 'db_datareader', 'SQL_Global_Admin_Read';
+GRANT VIEW DEFINITION TO [SQL_Global_Admin_Read];
+GRANT VIEW DATABASE STATE TO [SQL_Global_Admin_Read];

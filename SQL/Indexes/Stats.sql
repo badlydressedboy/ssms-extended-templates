@@ -28,5 +28,6 @@ from sysobjects o
 WHERE i.rowmodctr > 0  
 	and o.xtype = 'U' 
 	and i.name is not null 	
+	and o.name = 'valuations'
 order by pc_rows_changed desc
 
